@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGradShe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e0a14" />
+      <stop offset="50%" stop-color="#140e1c" />
+      <stop offset="100%" stop-color="#0a0a0f" />
+    </linearGradient>
+    <linearGradient id="roseAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899" />
+      <stop offset="100%" stop-color="#F43F5E" />
+    </linearGradient>
+    <linearGradient id="goldAccentShe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#FB923C" />
+    </linearGradient>
+    <pattern id="dotGridShe" x1="0" y1="0" x2="24" y2="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#ffffff" fill-opacity="0.05" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGradShe)" />
+  <rect width="800" height="500" fill="url(#dotGridShe)" />
+
+  <!-- Ambient Glow -->
+  <circle cx="400" cy="210" r="190" fill="#EC4899" fill-opacity="0.09" filter="blur(45px)" />
+  <circle cx="680" cy="120" r="130" fill="#F59E0B" fill-opacity="0.06" filter="blur(35px)" />
+
+  <!-- Outer Frame -->
+  <rect x="24" y="24" width="752" height="452" rx="16" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1.5" />
+
+  <!-- Top Metadata -->
+  <g transform="translate(60, 60)">
+    <text x="0" y="20" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" fill="#F472B6" letter-spacing="3">HERIZON 1.0</text>
+  </g>
+
+  <!-- Top Right Date Badge -->
+  <g transform="translate(610, 56)">
+    <rect x="0" y="0" width="130" height="36" rx="8" fill="#F59E0B" fill-opacity="0.12" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.2" />
+    <text x="65" y="23" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#FBBF24" text-anchor="middle" letter-spacing="1">MARCH 2026</text>
+  </g>
+
+  <!-- Central Camera / Aperture Geometric Icon -->
+  <g transform="translate(400, 210)">
+    <!-- Outer ring -->
+    <circle cx="0" cy="0" r="75" fill="#181120" stroke="url(#roseAccent)" stroke-width="2.5" stroke-opacity="0.85" />
+    <circle cx="0" cy="0" r="60" fill="#120c18" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.5" />
+    
+    <!-- Stylized Aperture Blades -->
+    <path d="M0,-45 L25,-10 L-10,-5 Z" fill="#F43F5E" fill-opacity="0.4" />
+    <path d="M45,0 L10,25 L5,-10 Z" fill="#EC4899" fill-opacity="0.4" />
+    <path d="M0,45 L-25,10 L10,5 Z" fill="#F59E0B" fill-opacity="0.4" />
+    <path d="M-45,0 L-10,-25 L-5,10 Z" fill="#FB923C" fill-opacity="0.4" />
+    <circle cx="0" cy="0" r="18" fill="#181120" stroke="url(#goldAccentShe)" stroke-width="2" />
+    <circle cx="0" cy="0" r="6" fill="#FBBF24" />
+  </g>
+
+  <!-- Main Titles -->
+  <text x="400" y="340" font-family="'Manrope', -apple-system, sans-serif" font-size="30" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="-0.5">SHE Captures</text>
+  <text x="400" y="375" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600" fill="#F472B6" text-anchor="middle" letter-spacing="2">EVENT LEAD · HERIZON 1.0</text>
+
+  <!-- Footer context -->
+  <text x="400" y="425" font-family="'Manrope', sans-serif" font-size="13" font-weight="500" fill="#94A3B8" text-anchor="middle" letter-spacing="0.5">Event Execution · Team Coordination · Women in Engineering Initiative</text>
+</svg>

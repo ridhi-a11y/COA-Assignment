@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGradIuxoa" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120f0a" />
+      <stop offset="50%" stop-color="#16121a" />
+      <stop offset="100%" stop-color="#09090c" />
+    </linearGradient>
+    <linearGradient id="goldSeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <pattern id="dotGridIuxoa" x1="0" y1="0" x2="24" y2="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#ffffff" fill-opacity="0.05" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGradIuxoa)" />
+  <rect width="800" height="500" fill="url(#dotGridIuxoa)" />
+
+  <!-- Ambient Glow -->
+  <circle cx="400" cy="205" r="190" fill="#F59E0B" fill-opacity="0.08" filter="blur(45px)" />
+  <circle cx="650" cy="120" r="120" fill="#D97706" fill-opacity="0.05" filter="blur(35px)" />
+
+  <!-- Outer Frame -->
+  <rect x="24" y="24" width="752" height="452" rx="16" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1.5" />
+
+  <!-- Top Metadata -->
+  <g transform="translate(60, 60)">
+    <text x="0" y="20" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" fill="#FBBF24" letter-spacing="3">IUXOA STUDIO</text>
+  </g>
+
+  <!-- Top Right Year Badge -->
+  <g transform="translate(620, 56)">
+    <rect x="0" y="0" width="120" height="36" rx="8" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-opacity="0.4" stroke-width="1.2" />
+    <text x="60" y="23" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#FDE68A" text-anchor="middle" letter-spacing="1">2026</text>
+  </g>
+
+  <!-- Central Recognition Medal / Certificate Seal Emblem -->
+  <g transform="translate(400, 205)">
+    <!-- Rosette / star burst back points -->
+    <circle cx="0" cy="0" r="70" fill="#1C1812" stroke="url(#goldSeal)" stroke-width="2" stroke-dasharray="4 2" />
+    <circle cx="0" cy="0" r="56" fill="#15121A" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.5" />
+
+    <!-- Stylized Laurel / Shield / Award Star -->
+    <path d="M0,-24 L7,-7 L24,-7 L11,4 L16,21 L0,11 L-16,21 L-11,4 L-24,-7 L-7,-7 Z" fill="url(#goldSeal)" />
+    
+    <!-- Ribbons -->
+    <path d="M-14,48 L-22,76 L-7,70 L0,76 L-6,48 Z" fill="#D97706" />
+    <path d="M14,48 L22,76 L7,70 L0,76 L6,48 Z" fill="#B45309" />
+  </g>
+
+  <!-- Main Titles -->
+  <text x="400" y="340" font-family="'Manrope', -apple-system, sans-serif" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="-0.5">iuXoa Studio Engineering Recognition</text>
+  <text x="400" y="375" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600" fill="#FBBF24" text-anchor="middle" letter-spacing="2">HONORS &amp; CERTIFICATES OF APPRECIATION</text>
+
+  <!-- Footer context -->
+  <text x="400" y="425" font-family="'Manrope', sans-serif" font-size="13" font-weight="500" fill="#94A3B8" text-anchor="middle" letter-spacing="0.5">Engineering Contributions across TrapMate · Woink · Runox · Paradox</text>
+</svg>

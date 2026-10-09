@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGradSocial" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e14" />
+      <stop offset="50%" stop-color="#0e131d" />
+      <stop offset="100%" stop-color="#080b10" />
+    </linearGradient>
+    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <pattern id="dotGridSocial" x1="0" y1="0" x2="24" y2="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#ffffff" fill-opacity="0.05" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGradSocial)" />
+  <rect width="800" height="500" fill="url(#dotGridSocial)" />
+
+  <!-- Ambient Glow -->
+  <circle cx="400" cy="205" r="180" fill="#06B6D4" fill-opacity="0.08" filter="blur(45px)" />
+  <circle cx="200" cy="120" r="130" fill="#3B82F6" fill-opacity="0.05" filter="blur(35px)" />
+
+  <!-- Outer Frame -->
+  <rect x="24" y="24" width="752" height="452" rx="16" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1.5" />
+
+  <!-- Top Metadata -->
+  <g transform="translate(60, 60)">
+    <text x="0" y="20" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="600" fill="#38BDF8" letter-spacing="3">ENGINEERING COMMUNITY</text>
+  </g>
+
+  <!-- Top Right Period Badge -->
+  <g transform="translate(530, 56)">
+    <rect x="0" y="0" width="210" height="36" rx="8" fill="#F59E0B" fill-opacity="0.12" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.2" />
+    <text x="105" y="23" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#FBBF24" text-anchor="middle" letter-spacing="1">JAN 2026 – JUL 2026</text>
+  </g>
+
+  <!-- Central Digital Network / Social Node Graph -->
+  <g transform="translate(400, 205)">
+    <!-- Connection lines -->
+    <line x1="0" y1="0" x2="-65" y2="-45" stroke="#06B6D4" stroke-opacity="0.5" stroke-width="2" />
+    <line x1="0" y1="0" x2="65" y2="-45" stroke="#3B82F6" stroke-opacity="0.5" stroke-width="2" />
+    <line x1="0" y1="0" x2="-75" y2="40" stroke="#06B6D4" stroke-opacity="0.5" stroke-width="2" />
+    <line x1="0" y1="0" x2="75" y2="40" stroke="#3B82F6" stroke-opacity="0.5" stroke-width="2" />
+    <line x1="-65" y1="-45" x2="-75" y2="40" stroke="#ffffff" stroke-opacity="0.15" stroke-dasharray="4 4" />
+    <line x1="65" y1="-45" x2="75" y2="40" stroke="#ffffff" stroke-opacity="0.15" stroke-dasharray="4 4" />
+
+    <!-- Pulse rings -->
+    <circle cx="0" cy="0" r="50" fill="none" stroke="url(#cyanAccent)" stroke-opacity="0.3" stroke-width="1.5" />
+
+    <!-- Nodes -->
+    <circle cx="-65" cy="-45" r="14" fill="#0C1929" stroke="#06B6D4" stroke-width="2" />
+    <circle cx="65" cy="-45" r="14" fill="#0C1929" stroke="#3B82F6" stroke-width="2" />
+    <circle cx="-75" cy="40" r="12" fill="#0C1929" stroke="#06B6D4" stroke-width="2" />
+    <circle cx="75" cy="40" r="12" fill="#0C1929" stroke="#3B82F6" stroke-width="2" />
+
+    <!-- Center main hub -->
+    <circle cx="0" cy="0" r="32" fill="#0F172A" stroke="url(#cyanAccent)" stroke-width="2.5" />
+    
+    <!-- Share/Broadcast icon inside hub -->
+    <circle cx="-8" cy="0" r="4" fill="#38BDF8" />
+    <circle cx="8" cy="-8" r="4" fill="#38BDF8" />
+    <circle cx="8" cy="8" r="4" fill="#38BDF8" />
+    <line x1="-8" y1="0" x2="8" y2="-8" stroke="#38BDF8" stroke-width="1.5" />
+    <line x1="-8" y1="0" x2="8" y2="8" stroke="#38BDF8" stroke-width="1.5" />
+  </g>
+
+  <!-- Main Titles -->
+  <text x="400" y="340" font-family="'Manrope', -apple-system, sans-serif" font-size="28" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="-0.5">Social Media Manager</text>
+  <text x="400" y="375" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600" fill="#38BDF8" text-anchor="middle" letter-spacing="2">DIGITAL OUTREACH · CONTENT STRATEGY</text>
+
+  <!-- Footer context -->
+  <text x="400" y="425" font-family="'Manrope', sans-serif" font-size="13" font-weight="500" fill="#94A3B8" text-anchor="middle" letter-spacing="0.5">Community Engagement · Campaign Management · Student Cohorts</text>
+</svg>
