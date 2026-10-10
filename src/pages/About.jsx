@@ -11,7 +11,6 @@ import {
   Github,
   Linkedin,
   Instagram,
-  Globe,
   GraduationCap,
   Languages as LanguagesIcon,
   Briefcase,
@@ -55,9 +54,9 @@ const socialLinks = [
     icon: XIcon,
   },
   {
-    name: "Portfolio",
-    url: "https://ridhigupta.vercel.app/",
-    icon: Globe,
+    name: "CV / Resume",
+    url: "/Ridhi_Gupta_Resume.pdf",
+    icon: FileText,
   },
 ];
 

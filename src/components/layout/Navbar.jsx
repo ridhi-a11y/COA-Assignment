@@ -47,9 +47,8 @@ export default function Navbar() {
     ? projectsData.find((p) => p.slug === currentSlug)
     : null;
   const projectWebsite = currentProject?.links?.demo;
-
-  const actionLink = projectWebsite || "https://ridhigupta.vercel.app/";
-  const actionLabel = projectWebsite ? "Website" : "Portfolio";
+  const actionLink = projectWebsite || "/Ridhi_Gupta_Resume.pdf";
+  const actionLabel = projectWebsite ? "Website" : "CV";
 
   return (
     <header
@@ -100,7 +99,7 @@ export default function Navbar() {
             })}
           </nav>
 
-          {/* Right Action: Dynamic Website / Portfolio Link */}
+          {/* Right Action: Dynamic Website / CV Link */}
           <div className="hidden md:flex items-center">
             <a
               href={actionLink}
@@ -153,7 +152,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="flex items-center justify-between px-4 py-2.5 rounded-xl text-sm font-mono text-neutral-300 hover:text-white hover:bg-white/[0.04] transition-colors"
               >
-                <span>{projectWebsite ? `${currentProject?.title} Website` : "Portfolio"}</span>
+                <span>{projectWebsite ? `${currentProject?.title} Website` : "CV"}</span>
                 <ArrowUpRight size={15} className="text-primary" />
               </a>
             </div>

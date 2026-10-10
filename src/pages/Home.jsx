@@ -13,10 +13,12 @@ import {
 } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ScrollStorytelling from "@/components/home/ScrollStorytelling";
+import CuratedDomains from "@/components/home/CuratedDomains";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0A0A0C] text-white selection:bg-primary/20 selection:text-white flex flex-col relative overflow-hidden">
+    <div className="min-h-screen bg-[#0A0A0C] text-white selection:bg-primary/20 selection:text-white flex flex-col relative overflow-x-clip">
       <Navbar />
 
       {/* BACKGROUND CIRCUIT TEXTURES */}
@@ -109,113 +111,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* INTRODUCTION STRIP */}
-      <section className="border-y border-white/[0.08] bg-white/[0.01] py-12 px-6">
-        <div className="max-w-4xl mx-auto text-center space-y-4">
-          <p className="text-xl sm:text-2xl text-neutral-200 font-normal leading-relaxed">
-            "Hi, I'm <span className="text-white font-semibold">Ridhi Gupta</span> — a CSE (Artificial Intelligence) student interested in software development, AI, and understanding the systems behind computation."
-          </p>
-          <p className="text-sm text-neutral-400 font-mono max-w-xl mx-auto">
-            Bridging hardware architecture principles with high-level software engineering and intelligent computing workflows.
-          </p>
-        </div>
-      </section>
+      {/* SCROLL-DRIVEN STORYTELLING INTRODUCTION */}
+      <ScrollStorytelling />
 
-      {/* EXPLORE NAVIGATION CARDS */}
-      <section className="py-20 px-6 max-w-7xl mx-auto w-full">
-        <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
-          <div>
-            <p className="font-mono text-xs uppercase tracking-widest text-primary font-medium mb-2">
-              CURATED DOMAINS
-            </p>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-              Explore Academic & Engineering Work
-            </h2>
-          </div>
-          <p className="text-sm text-neutral-400 max-w-md">
-            Dive into interactive computation modules, hackathon projects, and academic honors.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          
-          {/* CARD 1: COA LAB */}
-          <Link
-            to="/coa-lab"
-            className="group relative p-7 rounded-2xl bg-white/[0.02] border border-white/[0.08] hover:border-primary/50 hover:bg-white/[0.04] transition-all duration-300 flex flex-col justify-between"
-          >
-            <div>
-              <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary mb-6 group-hover:scale-105 group-hover:bg-primary group-hover:text-black transition-all">
-                <Binary size={22} />
-              </div>
-              <p className="font-mono text-xs text-primary font-medium uppercase tracking-wider mb-2">
-                INTERACTIVE TOOLS
-              </p>
-              <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-primary transition-colors">
-                COA Lab
-              </h3>
-              <p className="text-sm text-neutral-400 leading-relaxed font-normal">
-                Universal bilateral Number System Converter across Decimal, Binary, Octal, and Hexadecimal with comprehensive step-by-step mathematical proofs.
-              </p>
-            </div>
-            <div className="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-neutral-400 group-hover:text-primary transition-colors">
-              <span>Explore Lab</span>
-              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Link>
-
-          {/* CARD 2: PROJECTS */}
-          <Link
-            to="/projects"
-            className="group relative p-7 rounded-2xl bg-white/[0.02] border border-white/[0.08] hover:border-primary/50 hover:bg-white/[0.04] transition-all duration-300 flex flex-col justify-between"
-          >
-            <div>
-              <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary mb-6 group-hover:scale-105 group-hover:bg-primary group-hover:text-black transition-all">
-                <Cpu size={22} />
-              </div>
-              <p className="font-mono text-xs text-primary font-medium uppercase tracking-wider mb-2">
-                APPLIED SYSTEMS
-              </p>
-              <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-primary transition-colors">
-                Projects
-              </h3>
-              <p className="text-sm text-neutral-400 leading-relaxed font-normal">
-                Featured hackathons (ByteBuild 2026, Tekathon 5.0, Project Expo 2026) alongside industry-recognized engineering (TrapMate, Woink, Runox, Paradox).
-              </p>
-            </div>
-            <div className="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-neutral-400 group-hover:text-primary transition-colors">
-              <span>View Projects</span>
-              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Link>
-
-          {/* CARD 3: ACHIEVEMENTS */}
-          <Link
-            to="/achievements"
-            className="group relative p-7 rounded-2xl bg-white/[0.02] border border-white/[0.08] hover:border-primary/50 hover:bg-white/[0.04] transition-all duration-300 flex flex-col justify-between"
-          >
-            <div>
-              <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary mb-6 group-hover:scale-105 group-hover:bg-primary group-hover:text-black transition-all">
-                <Award size={22} />
-              </div>
-              <p className="font-mono text-xs text-primary font-medium uppercase tracking-wider mb-2">
-                RECOGNITION
-              </p>
-              <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-primary transition-colors">
-                Achievements
-              </h3>
-              <p className="text-sm text-neutral-400 leading-relaxed font-normal">
-                Verified hackathon laurels, developer recognitions from IuXoa Studio, and competitive milestone certificates with rich dedicated detail views.
-              </p>
-            </div>
-            <div className="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-neutral-400 group-hover:text-primary transition-colors">
-              <span>View Achievements</span>
-              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </div>
-          </Link>
-
-        </div>
-      </section>
+      {/* CURATED DOMAINS WITH SCROLL-LINKED SEQUENCE */}
+      <CuratedDomains />
 
       <Footer />
     </div>

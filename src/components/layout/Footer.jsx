@@ -62,15 +62,6 @@ export default function Footer() {
               <ArrowUpRight size={13} className="text-primary" />
             </a>
             <a
-              href="https://ridhigupta.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-neutral-400 hover:text-white transition-colors"
-            >
-              <span>Portfolio</span>
-              <ArrowUpRight size={13} className="text-primary" />
-            </a>
-            <a
               href="/Ridhi_Gupta_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
