@@ -169,7 +169,7 @@ export const projectsData = [
     },
     links: {
       github: null,
-      demo: "https://sat-query-dwr4keowb-auctor28-s-projects1.vercel.app/"
+      demo: "https://satquery-jade.vercel.app/"
     }
   },
 
