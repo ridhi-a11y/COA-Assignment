@@ -195,7 +195,7 @@ export default function CuratedDomains() {
                 Projects
               </h3>
               <p className="text-sm text-neutral-400 leading-relaxed font-normal">
-                Featured hackathons (ByteBuild 2026, Tekathon 5.0, Project Expo 2026) alongside industry-recognized engineering (TrapMate, Woink, Runox, Paradox).
+                Featured hackathons (ByteBuild 2026, Tekathon 5.0, Hacktoberfest 2026) alongside industry-recognized engineering (TrapMate, Woink, Runox, Paradox).
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-neutral-400 group-hover:text-primary transition-colors">
